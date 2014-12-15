@@ -1,0 +1,15 @@
+Sub Botón1_Haga_clic_en()
+    For a = 6 To 22 Step 2
+        For i = 8 To 30
+             With Sheets("Sheet1").Cells(i, a).Interior
+            .Color = Sheets("Sheet1").Cells(i, a + 1).DisplayFormat.Interior.Color
+            '.Pattern = Sheets("Sheet1").Cells(i, 2).DisplayFormat.Interior.Pattern
+            '.PatternColorIndex = Sheets("Sheet1").Cells(i, 2).DisplayFormat.Interior.PatternColorIndex
+            '.ThemeColor = Sheets("Sheet1").Cells(i, 2).DisplayFormat.Interior.ThemeColor
+            '.TintAndShade = Sheets("Sheet1").Cells(i, 2).DisplayFormat.Interior.TintAndShade
+            '.PatternTintAndShade = Sheets("Sheet1").Cells(i, 2).DisplayFormat.Interior.PatternTintAndShade
+        End With
+    Next
+    Next
+
+End Sub
